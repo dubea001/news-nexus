@@ -1,0 +1,76 @@
+HOMEPAGE
+
+--------------------------------------------------------------------------------
+| Logo             | Home | Categories | About | Contact | [Search Bar]        |
+--------------------------------------------------------------------------------
+|                        Featured Articles Slider                              |
+--------------------------------------------------------------------------------
+| Latest Articles                          | Sidebar                            |
+| -----------------------------------------|------------------------------------|
+| [Article 1]                              | Trending                           |
+| Thumbnail | Title | Excerpt | Date       | [Popular Article 1]                |
+| -----------------------------------------| [Popular Article 2]                |
+| [Article 2]                              | [Popular Article 3]                |
+| Thumbnail | Title | Excerpt | Date       |                                    |
+| -----------------------------------------| Tags/Keywords                      |
+| [Article 3]                              | [Tag 1] [Tag 2] [Tag 3]            |
+| Thumbnail | Title | Excerpt | Date       |                                    |
+| -----------------------------------------| Newsletter Signup Form             |
+| [Article 4]                              |                                    |
+| Thumbnail | Title | Excerpt | Date       |                                    |
+--------------------------------------------------------------------------------
+| Footer: About Us | Quick Links | Social Media Icons | Contact Information     |
+--------------------------------------------------------------------------------
+
+
+
+
+ARTICLES PAGE
+--------------------------------------------------------------------------------
+| Logo             | Home | Categories | About | Contact | [Search Bar]        |
+--------------------------------------------------------------------------------
+| Breadcrumb Navigation: Home > Category > Article Title                       |
+--------------------------------------------------------------------------------
+| Article Title                                                                |
+| Publication Date | Author                                                    |
+--------------------------------------------------------------------------------
+| Main Content                               | Sidebar                          |
+| -------------------------------------------|----------------------------------|
+| Article Body                               | Author Bio                       |
+| - Headings                                 | Short bio of the author          |
+| - Images                                   |                                  |
+| - Embedded Media                           | Related Posts                    |
+| - Text                                     | [Related Article 1]              |
+| Tags: [Tag 1] [Tag 2] [Tag 3]              | [Related Article 2]              |
+| -------------------------------------------| [Related Article 3]              |
+| Comments Section                           |                                  |
+| - Comment Form                             | Ad Space                          |
+| - Comments List                            |                                  |
+--------------------------------------------------------------------------------
+| Footer: About Us | Quick Links | Social Media Icons | Contact Information     |
+--------------------------------------------------------------------------------
+
+
+
+CATEGORY PAGE
+--------------------------------------------------------------------------------
+| Logo             | Home | Categories | About | Contact | [Search Bar]        |
+--------------------------------------------------------------------------------
+| Category Title                                                               |
+--------------------------------------------------------------------------------
+| Articles List                            | Sidebar                            |
+| -----------------------------------------|------------------------------------|
+| [Article 1]                              | Popular Posts                      |
+| Thumbnail | Title | Excerpt | Date       | [Popular Article 1]                |
+| -----------------------------------------| [Popular Article 2]                |
+| [Article 2]                              | [Popular Article 3]                |
+| Thumbnail | Title | Excerpt | Date       |                                    |
+| -----------------------------------------| Tags/Keywords                      |
+| [Article 3]                              | [Tag 1] [Tag 2] [Tag 3]            |
+| Thumbnail | Title | Excerpt | Date       |                                    |
+| -----------------------------------------| Newsletter Signup Form             |
+| [Article 4]                              |                                    |
+| Thumbnail | Title | Excerpt | Date       |                                    |
+--------------------------------------------------------------------------------
+| Footer: About Us | Quick Links | Social Media Icons | Contact Information     |
+--------------------------------------------------------------------------------

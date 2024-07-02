@@ -2,7 +2,7 @@ import Home from './Pages/Home';
 
 const App = () => {
     return (
-        <div className='font-poppins'>
+        <div className='font-merriweather'>
             <Home />
         </div>
     );
