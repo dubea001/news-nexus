@@ -1,11 +1,6 @@
-<<<<<<< HEAD
-import { ArticlesList, LatestNews } from './index';
-import { categories } from '../Constants/index';
-=======
 import { ArticlesList, SideArticles } from './index';
 import { categories } from '../Constants/index';
 import { assets } from '../assets/assets';
->>>>>>> feature1
 
 const ArticlesSection = () => {
     const apiKey = import.meta.env.VITE_API_KEY;
@@ -20,36 +15,17 @@ const ArticlesSection = () => {
     };
 
     return (
-<<<<<<< HEAD
-        <div className='grid grid-cols-1 md:grid-cols-3 gap-4 border border-black p-4'>
-            <div className='col-span-1 md:col-span-2 border border-red p-4'>
-                <h2>Top Headlines</h2>
-=======
         <div className='grid grid-cols-1 md:grid-cols-3 gap-4'>
             <div className='col-span-1 md:col-span-2 py-4 px-8 border-r-4 border-r-red'>
                 <h2 className='text-center text-2xl font-semibold text-red'>
                     Top Headlines
                 </h2>
                 <hr className='my-4' />
->>>>>>> feature1
                 <ArticlesList
                     endpoint='/top-headlines'
                     params={params.topHeadlines}
                 />
             </div>
-<<<<<<< HEAD
-            <div className='col-span-1 border border-blue p-4 space-y-10'>
-                {params.categories.map((category, index) => (
-                    <div key={index} className='border border-primary'>
-                        <p>Top headline for {category.title}</p>
-                        <LatestNews
-                            endpoint='/top-headlines'
-                            params={category.params}
-                        />
-                    </div>
-                ))}
-                <div className='border border-primary'>NewsLetter</div>
-=======
             <div className='h-fit max-w-fit space-y-10 px-8'>
                 <div className='my-6'>
                     {params.categories.map((category, index) => (
@@ -96,7 +72,6 @@ const ArticlesSection = () => {
                         className='w-full object-cover my-4'
                     />
                 </div>
->>>>>>> feature1
             </div>
         </div>
     );

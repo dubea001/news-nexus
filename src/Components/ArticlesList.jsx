@@ -49,35 +49,6 @@ const ArticlesList = ({ endpoint, params }) => {
     return (
         <div>
             {filteredArticles.map((article, index) => (
-<<<<<<< HEAD
-                <div className='border border-blue' key={index}>
-                    <h2 className=''>{article.title}</h2>
-                    <img
-                        src={
-                            article.urlToImage
-                                ? article.urlToImage
-                                : assets.defaultImage
-                        }
-                        alt={article.title}
-                        className='w-80'
-                    />
-                    <p className=''>{article.description}</p>
-                    <a
-                        href={article.url}
-                        target='_blank'
-                        rel='noopener noreferrer'
-                    >
-                        Read more
-                    </a>
-                    <p className=''>{article.author}</p>
-                    <p className=''>{structureDate(article.publishedAt)}</p>
-                </div>
-            ))}
-            {hasMore && (
-                <button onClick={loadMore} className='load-more'>
-                    Load More
-                </button>
-=======
                 <div className='my-8' key={index}>
                     <div className='relative'>
                         <div className='absolute bottom-4 w-9/12 bg-background px-4 py-2'>
@@ -127,7 +98,6 @@ const ArticlesList = ({ endpoint, params }) => {
                         Load More Articles <FaArrowRight className='ml-2' />
                     </button>
                 </div>
->>>>>>> feature1
             )}
         </div>
     );
