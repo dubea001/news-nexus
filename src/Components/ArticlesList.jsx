@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { fetchData } from '../Services/Api';
 import { assets } from '../assets/assets';
 import { structureDate } from '../Constants/index';
+import { FaArrowRight } from 'react-icons/fa';
 
 const ArticlesList = ({ endpoint, params }) => {
     const [articles, setArticles] = useState([]);
@@ -48,7 +49,7 @@ const ArticlesList = ({ endpoint, params }) => {
     return (
         <div>
             {filteredArticles.map((article, index) => (
-                <div className='border border-blue my-4' key={index}>
+                <div className='my-8' key={index}>
                     <div className='relative'>
                         <div className='absolute bottom-4 w-9/12 bg-background px-4 py-2'>
                             <h2 className='font-bold text-2xl'>
@@ -89,9 +90,14 @@ const ArticlesList = ({ endpoint, params }) => {
                 </div>
             ))}
             {hasMore && (
-                <button onClick={loadMore} className='load-more'>
-                    Load More
-                </button>
+                <div className='flex items-center justify-center'>
+                    <button
+                        onClick={loadMore}
+                        className='px-6 py-2 transition duration-200 flex items-center ease-in-out bg-dark hover:bg-black border-0 text-white'
+                    >
+                        Load More Articles <FaArrowRight className='ml-2' />
+                    </button>
+                </div>
             )}
         </div>
     );

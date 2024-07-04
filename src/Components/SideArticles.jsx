@@ -32,7 +32,7 @@ const SideArticles = ({ endpoint, params }) => {
     return (
         <div>
             {filteredArticles.map((article, index) => (
-                <div className='border border-blue p-2 m-1' key={index}>
+                <div className='p-2' key={index}>
                     <img
                         src={
                             article.urlToImage
@@ -40,7 +40,7 @@ const SideArticles = ({ endpoint, params }) => {
                                 : assets.defaultImage
                         }
                         alt={article.title}
-                        className='w-full my-3'
+                        className='w-full mb-3'
                     />
                     <p className='text-sm font-semibold'>
                         {`${article.title}...`}
@@ -53,6 +53,7 @@ const SideArticles = ({ endpoint, params }) => {
                             Read more
                         </a>
                     </p>
+                    <hr className='my-2' />
                 </div>
             ))}
         </div>

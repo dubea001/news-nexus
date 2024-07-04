@@ -1,5 +1,6 @@
 import { ArticlesList, SideArticles } from './index';
 import { categories } from '../Constants/index';
+import { assets } from '../assets/assets';
 
 const ArticlesSection = () => {
     const apiKey = import.meta.env.VITE_API_KEY;
@@ -14,21 +15,25 @@ const ArticlesSection = () => {
     };
 
     return (
-        <div className='grid grid-cols-1 md:grid-cols-3 gap-4 border border-black p-4 ml-8'>
-            <div className='col-span-1 md:col-span-2 border border-red p-4'>
+        <div className='grid grid-cols-1 md:grid-cols-3 gap-4'>
+            <div className='col-span-1 md:col-span-2 py-4 px-8 border-r-4 border-r-red'>
                 <h2 className='text-center text-2xl font-semibold text-red'>
                     Top Headlines
                 </h2>
+                <hr className='my-4' />
                 <ArticlesList
                     endpoint='/top-headlines'
                     params={params.topHeadlines}
                 />
             </div>
-            <div className='h-fit max-w-fit border ml-16 space-y-10'>
-                <div className=''>
+            <div className='h-fit max-w-fit space-y-10 px-8'>
+                <div className='my-6'>
                     {params.categories.map((category, index) => (
-                        <div key={index} className='border border-primary'>
-                            <p className='text-center text-red text-sm'>
+                        <div
+                            key={index}
+                            className='border border-gray my-6 px-4'
+                        >
+                            <p className='text-center text-red text-base my-2'>
                                 {category.title}
                             </p>
                             <SideArticles
@@ -38,9 +43,9 @@ const ArticlesSection = () => {
                         </div>
                     ))}
                 </div>
-                <div className='border border-primary my-6'>
+                <div className='my-6 border border-black px-4 py-2'>
                     <div className='flex flex-col items-start'>
-                        <h3 className='text-xl font-semibold my-4 text-primary'>
+                        <h3 className='text-xl font-semibold my-4 text-dark'>
                             Sign up for our weekly newsletter
                         </h3>
                         <p className='text-gray text-sm'>
@@ -57,16 +62,15 @@ const ArticlesSection = () => {
                         </button>
                     </div>
                 </div>
-                <div className='mt-40 border border-red'>
-                    <h2>Place Your Advert Here</h2>
-                    <p className=''>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Nobis repudiandae minus quam mollitia commodi optio?
-                        Minus officiis cum labore corrupti ex, a neque fugit
-                        totam aliquid sunt, quas amet incidunt! Qui expedita
-                        provident necessitatibus aut, quia similique! Esse,
-                        excepturi dignissimos!
-                    </p>
+                <div className='mt-40 border-t-2 border-t-red'>
+                    <h2 className='text-center text-red font-bold text-xl'>
+                        Place Your Advert Here
+                    </h2>
+                    <img
+                        src={assets.advertImage}
+                        alt='advertise here'
+                        className='w-full object-cover my-4'
+                    />
                 </div>
             </div>
         </div>
